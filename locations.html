@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/lll.png">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/locations.css">
+    <title>Địa điểm - Travio</title>
+</head>
+<body>
+    <!-- Header begin -->
+    <header class="sticky" id="header">
+        <div class="header_container pad-all-sec">
+            <div class="header_wr">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="nav_header">
+                    <div class="x-icon">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="nav_text">
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="locations.html" class="active">Địa điểm</a>
+                        </li>
+                        <li>
+                            <a href="tours.html">Chuyến đi</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Sự kiện</a>
+                        </li>
+                        <li>
+                            <a href="move.html">Di chuyển</a>
+                        </li>
+                    </ul>
+                    <div class="nav_icon">
+                        <div class="search-icon icon">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            <div class="search-box" draggable="true" id="box-se">
+                                <input type="text" placeholder="Nhập thông tin...">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="user-icon icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <section id="locations_page" class="mg-header">
+        <div class="loc-wrap-all pad-all-sec small-pad">
+            <div class="row-loc">
+                <div class="col-loc">
+                    <img src="images/loc1.webp" alt="">
+                    <div class="name-loc">
+                        <h3>VIỆT NAM</h3>
+                        <span>Khám phá <i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="discount-top">
+                        Giảm 10.000đ
+                    </div>
+                    <div class="img-box">
+                        <img src="images/col2.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Cáp Treo Sun World Ba Na Hills Đà Nẵng</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.7</span>
+                                <span class="rate-num">(17K+ đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 790,000</span>
+                            <span class="del-price"><del>₫ 800,000</del></span>
+                            <span class="discount">Giảm 10000VND</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="discount-top">
+                        Giảm 20.000đ
+                    </div>
+                    <div class="img-box">
+                        <img src="images/col3.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Cáp Treo Sun World Fansipan Legend</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.8</span>
+                                <span class="rate-num">(2,654 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 780,000</span>
+                            <span class="del-price"><del>₫ 800,000</del></span>
+                            <span class="discount">Giảm 20000VND</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/col4.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Show Ký Ức Hội An và Công Viên Văn Hoá Ấn Tượng Hội An </h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.9</span>
+                                <span class="rate-num">(623 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 890,000</span>
+                            <span class="del-price"><del>₫ 920,000</del></span>
+                            <span class="discount">Ưu đãi đặc biệt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/col5.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Vinpearl Safari Phú Quốc</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.6</span>
+                                <span class="rate-num">(1,123+ đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 630,000</span>
+                            <span class="del-price"><del>₫ 650,000</del></span>
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-loc">
+                <div class="col-loc">
+                    <img src="images/col21.webp" alt="">
+                    <div class="name-loc">
+                        <h3>HÀN QUỐC</h3>
+                        <span>Khám phá <i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r22.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Lotte World ở Seoul </h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.5</span>
+                                <span class="rate-num">(20K+ đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 729,000</span>
+                            <span class="del-price"><del>₫ 1,100,000</del></span>
+                            <span class="discount">Ưu đãi đặc biệt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r23.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Tháp N Seoul</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.6</span>
+                                <span class="rate-num">(25K+ đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 222,000</span>
+                            <span class="del-price"><del>₫ 284,000</del></span>
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r24.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Busan Haeundae X the Sky ở Haeundae</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.8</span>
+                                <span class="rate-num">(155 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 320,000</span>
+                            <span class="del-price"><del>₫ 427,000</del></span>
+                            <!-- <span class="discount">ưu đãi đặc biệt</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r25.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Seoul Sky ở Tháp Lotte World Tower </h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.7</span>
+                                <span class="rate-num">(3,453 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 445,000</span>
+                            <span class="del-price"><del>₫ 480,000</del></span>
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-loc">
+                <div class="col-loc">
+                    <img src="images/r31.webp" alt="">
+                    <div class="name-loc">
+                        <h3>THÁI LAN</h3>
+                        <span>Khám phá <i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r33.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Vườn Bách Thảo Nhiệt Đới Nong Nooch ở Pattaya</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.6</span>
+                                <span class="rate-num">(3,122 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 279,000</span>
+                            <span class="del-price"><del>₫ 339,000</del></span>
+                            <span class="discount">Ưu đãi đặc biệt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r34.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Công Viên Nước Pororo AquaPark ở Bangkok</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.7</span>
+                                <span class="rate-num">(2,782 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 196,000</span>
+                            <span class="del-price"><del>₫ 271,000</del></span>
+                            <span class="discount">Mua 2 Giảm 10%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r35.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Sở Thú Safari World Bangkok</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.6</span>
+                                <span class="rate-num">(14K+ đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 509,000</span>
+                            <span class="del-price"><del>₫ 723,000</del></span>
+                            <span class="discount">Ưu đãi đặc biệt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r32.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Ngôi Đền Chân Lý Sanctuary of Truth ở Pattaya </h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.7</span>
+                                <span class="rate-num">(7,113 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 237,000</span>
+                            <span class="del-price"><del>₫ 339,000</del></span>
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-loc">
+                <div class="col-loc">
+                    <img src="images/r41.webp" alt="">
+                    <div class="name-loc">
+                        <h3>MỸ</h3>
+                        <span>Khám phá <i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r42.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Công Viên Giải Trí Disneyland Resort ở California</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.8</span>
+                                <span class="rate-num">(4,198 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 2,390,000</span>
+                            <span class="del-price"><del>₫ 2,439,000</del></span>
+                            <!-- <span class="discount">Ưu đãi đặc biệt</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r43.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Universal Studios Hollywood</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.9</span>
+                                <span class="rate-num">(3,888 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 2,980,000</span>
+                            <span class="del-price"><del>₫ 3,271,000</del></span>
+                            <!-- <span class="discount">Mua 2 Giảm 10%</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r44.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Walt Disney World Resort ở Orlando, Florida</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.6</span>
+                                <span class="rate-num">(289 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 1,609,000</span>
+                            <!-- <span class="del-price"><del>₫ 723,000</del></span> -->
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r45.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Xe Buýt đi Woodbury Common Premium Outlets từ New York</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.5</span>
+                                <span class="rate-num">(173 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 975,000</span>
+                            <span class="del-price"><del>₫ 1,143,000</del></span>
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-loc">
+                <div class="col-loc">
+                    <img src="images/r51.webp" alt="">
+                    <div class="name-loc">
+                        <h3>ĐÀI LOAN</h3>
+                        <span>Khám phá <i class="fa-sharp fa-solid fa-angle-right"></i></span>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r52.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Vào Cửa Thuỷ Cung và Bảo Tàng Sinh Vật Biển Quốc Gia ở Khẩn Đinh (Kenting)</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.9</span>
+                                <span class="rate-num">(15K+ đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 190,999</span>
+                            <span class="del-price"><del>₫ 192,000</del></span>
+                            <span class="discount">Giảm 1%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r53.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Đài Quan Sát Taipei 101</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.7</span>
+                                <span class="rate-num">(31K+ đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 458,000</span>
+                            <!-- <span class="del-price"><del>₫ 3,271,000</del></span> -->
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r54.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Công Viên Giải Trí Thiếu Nhi Đài Bắc</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.9</span>
+                                <span class="rate-num">(5,989 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 144,000</span>
+                            <span class="del-price"><del>₫ 152,000</del></span>
+                            <!-- <span class="discount">Chính sách đảm bảo về giá</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-loc">
+                    <div class="img-box">
+                        <img src="images/r55.webp" alt="">
+                    </div>
+                    <div class="under-box">
+                        <h3>Vé Công Viên Địa Chất Dã Liễu (Yehliu) ở Tân Đài Bắc</h3>
+                        <p class="rate">
+                            <span>
+                                <span class="rate-star">★ 4.8</span>
+                                <span class="rate-num">(8,233 đánh giá)</span>
+                            </span>
+                        </p>
+                        <div class="price-box">
+                            <span class="price">₫ 95,000</span>
+                            <!-- <span class="del-price"><del>₫ 1,143,000</del></span> -->
+                            <span class="discount">Chính sách đảm bảo về giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Footer begin -->
+     <footer>
+        <div class="footer_container pad-all-sec small-pad">
+            <div class="row">
+                <div class="col-1 ft-col">
+                    <img src="images/logo.png" alt="">
+                    <p>Công ty du lịch của chúng tôi tự hào là một đối tác đáng tin cậy để bạn khám phá thế giới. Với đội ngũ chuyên gia giàu kinh nghiệm và sự tận tâm, 
+                        chúng tôi cam kết mang đến cho khách hàng những trải nghiệm du lịch tuyệt vời.</p>
+                    <div class="social-icons">
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 ft-col">
+                    <h3>Dịch Vụ</h3>
+                    <ul class="list-services">
+                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="#">Danh Sách</a></li>
+                        <li><a href="#">Cách Hoạt Động</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Bài Viết</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 ft-col">
+                    <h3>Thư Viện</h3>
+                    <ul class="gallery-wr">
+                        <li><a href="#"><img src="images/footer-gallery-1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-6.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-4 ft-col">
+                    <h3>Liên Hệ</h3>
+                    <ul class="informations">
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-phone"></i>
+                                +2(305) 587-3407</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-envelope"></i>
+                                email@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <div class="pad-all-sec">
+                <div class="left">
+                    Travio © 2021 All Right Reserved
+                </div>
+                <div class="right">
+                    <span><a href="#">Terms of Service</a></span> |
+                     <span><a href="#">Privacy Policy</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+</body>
+    <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,203 @@
+#events_page {
+    margin-top: 67.33333px;
+}
+
+#events_page .banner-content {
+    width: 100%;
+    height: 300px;
+    background: url("../images/banner-event.jpg") no-repeat 100% 100% / cover;
+    padding-bottom: 30px;
+    padding: 100px 4% 20px 4%;
+}
+
+#events_page .banner-content .search-bar {
+    border: 1px solid #aba1a1;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 12px;
+    margin: 20px 0 30px;
+    background-color: var(--main-color);
+    width: 70%;
+}
+
+#events_page .banner-content h1 {
+    color: var(--main-color);
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#events_page .banner-content .search-bar i {
+    position: absolute;
+    line-height: 38px;
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+#events_page .banner-content .search-bar input {
+    width: 100%;
+    padding: 10px 28px;
+    padding-right: 20%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+#events_page .banner-content .search-bar button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    padding: 14px 28px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--main-color);
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--secondary-color);
+}
+
+#events_page .banner-content .search-bar button:hover {
+    background-color: var(--sub-color);
+    color: var(--secondary-color);
+}
+
+#events_page .event_items-wr {
+    margin-top: 50px;
+}
+
+#events_page .row-event {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(18%, 215px));
+    gap: 20px;
+}
+
+#events_page .row-event:not(:first-child) {
+    margin-top: 30px;
+}
+
+#events_page .row-event:last-child {
+    margin-bottom: 100px;
+}
+
+#events_page .col-ev {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    height: 335px;
+    /* max-width: 215px; */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#events_page .col-ev.hvj:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#events_page .col-ev > img {
+    height: 100%;
+    width: 100%;
+}
+
+#events_page .col-ev .name-ev {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    display: inline-block;
+    color: var(--main-color);
+}
+
+#events_page .col-ev .name-ev > h3 {
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+#events_page .event_items-wr h2 {
+    font-size: 30px;
+    color: var(--sub-color);
+}
+
+#events_page .col-ev > .ev-pic {
+    height: 80%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#events_page .col-ev > .ev-pic img {
+    height: 100%;
+    width: 100%;
+}
+
+#events_page .col-ev .under {
+    padding: 8px 10px;
+}
+
+#events_page .col-ev .under > h3 {
+    font-size: 16px;
+    font-weight: 500;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#events_page .col-ev .under > p {
+    color: var(--sub-text-cl);
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    #events_page .row-event {
+        grid-template-columns: repeat(4, minmax(23%, 215px));
+    }
+}
+  
+@media screen and (max-width: 902px){
+    #events_page .row-event {
+        justify-content: center;
+        grid-template-columns: repeat(3, auto);
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .small-pad {
+        padding: 0 20px;
+    }
+    
+    #events_page .row-event {
+        gap: 18px;
+    }
+
+    #events_page .banner-content .search-bar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #events_page .row-event {
+        grid-template-columns: repeat(1, 60%);
+    }
+
+    #events_page .banner-content {
+        padding-bottom: 30px;
+        padding-top: 90px;
+    }
+
+    #events_page .banner-content h1 {
+        color: var(--main-color);
+        font-size: 40px;
+    }
+
+    #events_page .banner-content .search-bar button {
+        padding: 10px 20px;
+        top: 10px;
+    }
+}

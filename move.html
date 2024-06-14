@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/lll.png">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/move.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7WYw_rKLiUoFpuFWBp85E8eWTbTJO2cM&libraries=places"></script>
+    <title>Di chuyển - Travio</title>
+</head>
+<body>
+    <!-- Header begin -->
+    <header class="sticky" id="header">
+        <div class="header_container pad-all-sec">
+            <div class="header_wr">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="nav_header">
+                    <div class="x-icon">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="nav_text">
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="locations.html">Địa điểm</a>
+                        </li>
+                        <li>
+                            <a href="tours.html">Chuyến đi</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Sự kiện</a>
+                        </li>
+                        <li>
+                            <a href="move.html" class="active">Di chuyển</a>
+                        </li>
+                    </ul>
+                    <div class="nav_icon">
+                        <div class="search-icon icon">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            <div class="search-box" draggable="true" id="box-se">
+                                <input type="text" placeholder="Nhập thông tin...">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="user-icon icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <section id="move_page">
+        <div class="banner">
+            
+        </div>
+        <main class="transportations pad-all-sec small-pad">
+            <div class="nav_banner">
+                <h2>Di chuyển</h2>
+                <div class="choice_bar">
+                    <div class="short_square">
+                        <img src="images/buses.png" alt="">
+                        <p>Xe buýt</p>
+                    </div>
+                    <div class="long_square">
+                        <div class="selected">
+                            Tất cả xe buýt
+                        </div>
+                        <div class="find-loc">
+                            <button>
+                                <span>Vị trí của bạn </span>
+                                <i class="fa-sharp fa-solid fa-circle-right"></i>
+                            </button>
+                            <div class="result">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp_container">
+                <h1>Tất cả xe buýt</h1>
+                <span>Tất cả phương tiện</span>
+                <div class="tp_wrap">
+                    <div class="row">
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Giường Nằm đi Sapa từ Hà Nội và Ngược Lại </h3>
+                                <div class="rate">
+                                    <span>★ 4.1</span>
+                                    <span>(605 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 230,000</del>
+                                    <p>đ 219,988</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Limousine đi Sapa từ Hà Nội và Ngược Lại </h3>
+                                <div class="rate">
+                                    <span>★ 4</span>
+                                    <span>(545 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 500,000</del>
+                                    <p>đ 459,988</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Ghép Từ Đà Nẵng đi Hội An & Ngược Lại </h3>
+                                <div class="rate">
+                                    <span>★ 4.4</span>
+                                    <span>(770 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 140,000</del>
+                                    <p>đ 129,988</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Cabin Đi Nha Trang từ TP Hồ Chí Minh và Ngược Lại</h3>
+                                <div class="rate">
+                                    <span>★ 4.5</span>
+                                    <span>(69 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del></del>
+                                    <p>450,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày hôm nay</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Buýt Đi Huế Từ Đà Nẵng & Ngược Lại</h3>
+                                <div class="rate">
+                                    <span>★ 4.2</span>
+                                    <span>(222 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 250,000</del>
+                                    <p>đ 220,988</p>
+                                </div>
+                                <p>Có thể đặt từ hôm nay</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Buýt Đi Giữa Bà Nà Hills và Thành Phố Đà Nẵng </h3>
+                                <div class="rate">
+                                    <span>★ 4.6</span>
+                                    <span>(232 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 180,000</del>
+                                    <p>đ 168,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé xe Limousine Đi Vũng Tàu, Long Hải, Hồ Tràm, Bình Châu Từ Hồ Chí Minh & Ngược Lại</h3>
+                                <div class="rate">
+                                    <span>★ 4.9</span>
+                                    <span>(999 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 210,000</del>
+                                    <p>đ 205,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Xe Giường Nằm và Cabin Đi Sapa Từ Hà Nội & Ngược Lại (Nhà xe Interbus Lines)</h3>
+                                <div class="rate">
+                                    <span>★ 4.2</span>
+                                    <span>(317 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>310,000</del>
+                                    <p>250,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Buýt Đi Giữa Núi Thần Tài, Hoà Phú Thành Và Thành phố Đà Nẵng </h3>
+                                <div class="rate">
+                                    <span>★ 4</span>
+                                    <span>(20 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 250,000</del>
+                                    <p>đ 200,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé xe Limousine đi giữa Hồ Chí Minh, Phan Thiết và Mũi Né </h3>
+                                <div class="rate">
+                                    <span>★ 4.3</span>
+                                    <span>(26 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 450,000</del>
+                                    <p>đ 400,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé xe VIP Cabin Limousine đi Đà Lạt từ TP Hồ Chí Minh và ngược lại </h3>
+                                <div class="rate">
+                                    <span>★ 4.3</span>
+                                    <span>(124 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 1,130,000</del>
+                                    <p>đ 900,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Limousine Đi Giữa Nha Trang Và Đà Lạt </h3>
+                                <div class="rate">
+                                    <span>★ 3,9</span>
+                                    <span>(60 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 250,000</del>
+                                    <p>đ 240,000</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé xe limousine và buýt đi Huế từ Hội An và ngược lại</h3>
+                                <div class="rate">
+                                    <span>★ 4.4</span>
+                                    <span>(5 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del></del>
+                                    <p>đ 210,988</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pic">
+                            </div>
+                            <div class="content">
+                                <h3>Vé Xe Limousine Đi Thanh Hoá và Sầm Sơn từ Hà Nội và ngược lại</h3>
+                                <div class="rate">
+                                    <span>★ 4.7</span>
+                                    <span>(61 reviews)</span>
+                                </div> 
+                                <div class="price">
+                                    <del>đ 280,000</del>
+                                    <p>đ 250,008</p>
+                                </div>
+                                <p>Có thể đặt từ ngày mai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- Footer begin -->
+    <footer>
+        <div class="footer_container pad-all-sec small-pad">
+            <div class="row">
+                <div class="col-1 ft-col">
+                    <img src="images/logo.png" alt="">
+                    <p>Công ty du lịch của chúng tôi tự hào là một đối tác đáng tin cậy để bạn khám phá thế giới. Với đội ngũ chuyên gia giàu kinh nghiệm và sự tận tâm, 
+                        chúng tôi cam kết mang đến cho khách hàng những trải nghiệm du lịch tuyệt vời.</p>
+                    <div class="social-icons">
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 ft-col">
+                    <h3>Dịch Vụ</h3>
+                    <ul class="list-services">
+                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="#">Danh Sách</a></li>
+                        <li><a href="#">Cách Hoạt Động</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Bài Viết</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 ft-col">
+                    <h3>Thư Viện</h3>
+                    <ul class="gallery-wr">
+                        <li><a href="#"><img src="images/footer-gallery-1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-6.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-4 ft-col">
+                    <h3>Liên Hệ</h3>
+                    <ul class="informations">
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-phone"></i>
+                                +2(305) 587-3407</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-envelope"></i>
+                                email@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <div class="pad-all-sec">
+                <div class="left">
+                    Travio © 2021 All Right Reserved
+                </div>
+                <div class="right">
+                    <span><a href="#">Terms of Service</a></span> |
+                     <span><a href="#">Privacy Policy</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+</body>
+<script src="js/main.js"></script>
+<script src="js/move.js"></script>
+</html>

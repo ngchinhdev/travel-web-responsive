@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/lll.png">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travio</title>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader_wr">
+            <div class="box-trash">
+                <div class="img-box">
+                    <img src="images/cac-loai-tui-dung-rac-2.png" alt="" id="trash" draggable="true">
+                    <div class="trash-bin-box">
+                        <img src="images/thung-rac-cong-cong-120l-1-1.png" alt="" class="trash-bin">
+                    </div>
+                </div>
+                <h4>Kéo bọc rác vào thùng!</h4>
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                <h3>Hãy Bảo Vệ Môi Trường!</h3>
+            </div>
+        </div>
+    </div>
+    <div class="isHomePage"></div>
+    <!-- Header begin -->
+    <header class="" id="header">
+        <div class="header_container pad-all-sec">
+            <div class="header_wr">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="nav_header">
+                    <div class="x-icon">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="nav_text">
+                        <li>
+                            <a href="index.html" class="active">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="locations.html">Địa điểm</a>
+                        </li>
+                        <li>
+                            <a href="tours.html">Chuyến đi</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Sự kiện</a>
+                        </li>
+                        <li>
+                            <a href="move.html">Di chuyển</a>
+                        </li>
+                    </ul>
+                    <div class="nav_icon">
+                        <div class="search-icon icon">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            <div class="search-box" draggable="true" id="box-se">
+                                <input type="text" placeholder="Nhập thông tin...">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="user-icon icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <!-- Banner begin  -->
+    <section id="banner">
+        <div class="banner_content pad-all-sec">
+            <div class="banner_text">
+                <h1>Khám phá chuyến đi của bạn</h1>
+                <p>Tìm kiếm hành trình mới? Trở thành người khám phá để bắt đầu!</p>
+            </div>
+            <div class="banner_input">
+                <div class="input-wr">
+                    <input type="text" class="where i-flied" placeholder="Điểm đến ?">
+                </div>
+                <div class="input-wr date-wr">
+                    <input type="date" class="when i-flied" placeholder="Thời gian ?">
+                </div>
+                <div class="input-wr">
+                    <select name="" id="" class="type i-flied">
+                        <option value="">Kiểu Du Lịch</option>
+                        <option value="">Khám phá</option>
+                        <option value="">Du lịch thành phố</option>
+                        <option value="">Du lịch cặp</option>
+                        <option value="">Du lịch nhóm</option>
+                    </select>
+                </div>
+                <button><i class="fa-solid fa-magnifying-glass"></i>Tìm Ngay</button>
+            </div>
+        </div>
+    </section>
+    <!-- Banner end -->
+    <!-- Trending begin  -->
+    <section id="trending">
+        <div class="trending_wrap pad-all-sec small-pad">
+            <h1>Xu Hướng Du Lịch 2023</h1>
+            <div class="tour-row">
+                <div class="tour-card">
+                    <div class="card-above">
+                        <img src="images/trending1.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Điểm tham quan - Singgapore</span>
+                        <h3>Vé Universal Studios Singapore</h3>
+                        <div class="info">
+                            <span class="rate">★ 4.8</span>
+                            <span class="review-num">(85,459)</span>
+                            <span class="review-booked">• 2M+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Xác nhận tức thời</span>
+                        </div>
+                        <div class="price">Từ US$ 48.60</div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="card-above">
+                        <img src="images/trending2.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Điểm tham quan - Bangkok</span>
+                        <h3>Vé Đài Quan Sát Mahanakhon SkyWalk ở Bangkok</h3>
+                        <div class="info">
+                            <span class="rate">★ 4.7</span>
+                            <span class="review-num">(8,459)</span>
+                            <span class="review-booked">• 100K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 25.95 <span><del>US$ 30.20</del></span></div>
+                        <span class="sub-info">Giảm 6%</span>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="card-above">
+                        <img src="images/trending3.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Điểm tham quan - Singgapore</span>
+                        <h3>Vé Vòng quay Singapore Flyer</h3>
+                        <div class="info">
+                            <span class="rate">★ 4.6</span>
+                            <span class="review-num">(7,079)</span>
+                            <span class="review-booked">• 300K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Xác nhận tức thời</span>
+                        </div>
+                        <div class="price">Từ US$ 23.12</div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="card-above">
+                        <img src="images/trending4.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Điểm tham quan - Bangkok</span>
+                        <h3>Vé Bảo Tàng Erawan và Thành Cổ Ancient City ở Bangkok</h3>
+                        <div class="info">
+                            <span class="rate">★ 4.8</span>
+                            <span class="review-num">(32,962)</span>
+                            <span class="review-booked">• 1M+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Xác nhận tức thời</span>
+                        </div>
+                        <div class="price">Từ US$ 8.25 <span><del>US$ 8.35</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trending end  -->
+    <!-- Famous destination begin  -->
+    <section id="famous_des">
+        <main class="pad-all-sec small-pad">
+           <div class="title-box-common">
+                <h1>Địa Điểm Nổi Tiếng</h1>
+                <span><a href="#" class="see-all-btn">Xem tất cả</a></span>
+            </div> 
+            <div class="des-box">
+                <div class="box-1 dbox">
+                    <img src="images/greece.jpg" alt="">
+                    <small>4.9</small>
+                    <span>Porto Katsiki</span>
+                </div>
+                <div class="box-2 dbox">
+                    <img src="images/london.jpg" alt="">
+                    <small>4.6</small>
+                    <span>London</span>
+                </div>
+                <div class="box-3 dbox">
+                    <img src="images/seoul.jpg" alt="">
+                    <small>4.4</small>
+                    <span>Seoul</span>
+                </div>
+                <div class="box-4 dbox">
+                    <img src="images/paris.jpg" alt="">
+                    <small>4.5</small>
+                    <span>Paris</span>
+                </div>
+                <div class="box-5 dbox">
+                    <img src="images/tokyop.jpg" alt="">
+                    <small>4.7</small>
+                    <span>Tokyo</span>
+                </div>
+                <div class="box-6 dbox">
+                    <img src="images/amsterdam.webp" alt="">
+                    <small>4.8</small>
+                    <span>Armsterdam</span>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- Famous destination end  -->
+    <!-- Best price begin  -->
+    <section id="best_price">
+        <div class="bp_container pad-all-sec small-pad">
+            <h1>Giá tốt nhất</h1>
+            <div class="tour-wr">
+                <div class="tour-item">
+                    <div class="img-bx">
+                        <img src="images/train-1728537_1280.jpg" alt="">
+                        <div class="hv-detail">
+                            <div class="discount">30%</div> 
+                            <div class="under">
+                                <div class="price">$957.50</div>
+                                <div class="right-bx">
+                                    <div class="share-icon">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </div>
+                                    <div class="explore">
+                                        Explore
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Du Lịch Tàu Hỏa</h3>
+                        <p>Kiểm tra chi tiết hàng ngày và khuyến mãi về khách sạn.</p>
+                        <p>Đặt phòng dễ dàng & nhanh chóng</p>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="img-bx">
+                        <img src="images/sea.jpg" alt="">
+                        <div class="hv-detail">
+                            <div class="discount">26%</div> 
+                            <div class="under">
+                                <div class="price">$747.20</div>
+                                <div class="right-bx">
+                                    <div class="share-icon">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </div>
+                                    <div class="explore">
+                                        Explore
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Biển Thiên Nhiên</h3>
+                        <p>Kiểm tra chi tiết hàng ngày và khuyến mãi về khách sạn.</p>
+                        <p>Đặt phòng dễ dàng & nhanh chóng</p>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="img-bx">
+                        <img src="images/street-3453557_1280.jpg" alt="">
+                        <div class="hv-detail">
+                            <div class="discount">25%</div> 
+                            <div class="under">
+                                <div class="price">$435.51</div>
+                                <div class="right-bx">
+                                    <div class="share-icon">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </div>
+                                    <div class="explore">
+                                        Explore
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Con Đường Cổ</h3>
+                        <p>Kiểm tra chi tiết hàng ngày và khuyến mãi về khách sạn.</p>
+                        <p>Đặt phòng dễ dàng & nhanh chóng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best price end  -->
+    <!-- Tour guides begin -->
+    <section id="tour-guides">
+        <div class="tour-guides-container pad-all-sec small-pad">
+            <div class="title-box-common">
+                <h1>Hướng Dẫn Viên</h1>
+                <span><a href="#" class="see-all-btn">Xem tất cả</a></span>
+            </div> 
+            <div class="guides-wr">
+                <div class="guide-box">
+                    <div class="img-box">
+                        <img src="images/vest0.jpg" alt="">
+                    </div>
+                    <div class="guide-under">
+                        <a href="#">Follow me</a>
+                        <h4>Quỳnh Alee</h4>
+                        <p>Quỳnh Alee, một hướng dẫn viên du lịch tài năng, sở hữu khả năng giao tiếp xuất sắc và kiến thức sâu rộng về lịch sử,
+                            văn hóa. Cô ấy sẽ mang đến cho bạn những trải nghiệm du lịch thú vị và đáng nhớ.</p>
+                    </div>
+                    <div class="img-hv"></div>
+                </div>
+                <div class="guide-box">
+                    <div class="img-box">
+                        <img src="images/vest01.webp" alt="">
+                    </div>
+                    <div class="guide-under">
+                        <a href="#">Follow me</a>
+                        <h4>Tuấn Hưng</h4>
+                        <p>Tuấn Hưng là một hướng dẫn viên du lịch đầy nhiệt huyết và am hiểu sâu về địa danh, lịch sử và văn hóa. Anh ta sẽ
+                            đồng hành cùng bạn trong những chuyến đi đáng nhớ và truyền cảm hứng.</p>
+                    </div>
+                    <div class="img-hv"></div>
+                </div>
+                <div class="guide-box">
+                    <div class="img-box">
+                        <img src="images/eevvv.jpg" alt="">
+                    </div>
+                    <div class="guide-under">
+                        <a href="#">Follow me</a>
+                        <h4>Tường Vi</h4>
+                        <p>Tường Vi, một hướng dẫn viên du lịch đam mê và tận tâm. Với sự am hiểu về địa danh, lịch sử và văn hóa, cô ấy sẽ mang
+                            đến cho bạn những trải nghiệm du lịch tuyệt vời và độc đáo.</p>
+                    </div>
+                    <div class="img-hv"></div>
+                </div>
+                <div class="guide-box">
+                    <div class="img-box">
+                        <img src="images/vvvv.jpg" alt="">
+                    </div>
+                    <div class="guide-under">
+                        <a href="#">Follow me</a>
+                        <h4>Quốc Cường</h4>
+                        <p>Quốc Cường, một hướng dẫn viên du lịch đầy nhiệt huyết và kỹ năng giao tiếp tuyệt vời. Với kiến thức đa dạng về địa
+                            danh và văn hóa, anh ta sẽ tạo ra những trải nghiệm du lịch đáng nhớ cho bạn.</p>
+                    </div>
+                    <div class="img-hv"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tour guides end -->
+    <!-- Why choose us begin  -->
+    <section id="why_us">
+        <div class="why-us-containner pad-all-sec small-pad">
+            <h1>Tại Sao Nên Chọn Chúng Tôi</h1>
+            <div class="reason-wr">
+                <div class="reason-box">
+                    <img src="images/why1.png" alt="">
+                    <h3>Khách Sạn Sang Trọng</h3>
+                    <p>Đội ngũ phục vụ chuyên nghiệp, tận hưởng dịch vụ tuyệt vời, thiết kế đẹp mắt và không gian xa hoa, đáng nhớ.</p>
+                </div>
+                <div class="reason-box">
+                    <img src="images/why2.png" alt="">
+                    <h3>Dịch Vụ Hấp Dẫn</h3>
+                    <p>Chăm sóc tận tâm, đa dạng và chất lượng cao, mang đến trải nghiệm đáng nhớ và đáp ứng đa dạng nhu cầu của khách hàng.</p>
+                </div>
+                <div class="reason-box">
+                    <img src="images/why3.png" alt="">
+                    <h3>Giá Tốt Nhất</h3>
+                    <p>Chúng tôi cam kết cung cấp giá hấp dẫn và cạnh tranh nhất, đảm bảo bạn nhận được giá trị tối ưu cho mọi khoản đầu tư của mình.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why choose us end  -->
+    <!-- Banner video begin  -->
+    <section id="banner_video">
+        <video style="width: 100%; height: 280px; object-fit: cover;" autoplay loop muted>
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <!-- Banner video end   -->
+    <!-- Article and tip begin  -->
+    <section id="article_tip">
+        <div class="article_tip pad-all-sec small-pad">
+            <h1>Bài Viết & Mẹo</h1>
+            <div class="article_wr">
+                <div class="article">
+                    <img src="images/tip.jpg" alt="">
+                    <div class="content">
+                        <div class="date">12 Tháng 5, 2023</div>
+                        <h2>
+                            Ngày Đáng Nhớ, Ai Đó Đã Rủ Tôi Đi Du Lịch.
+                        </h2>
+                        <p>Đi xa khám phá, tận hưởng những cảnh đẹp tuyệt vời, trải nghiệm văn hóa mới, 
+                            và tạo ra những kỷ niệm đáng nhớ suốt đời. Ngày hôm đó, tôi và em...</p>
+                        <p>Read More <i class="fa-sharp fa-solid fa-chevron-right"></i></p>
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="images/tipp.jpeg" alt="">
+                    <div class="content">
+                        <div class="date">12 Tháng 5, 2023</div>
+                        <h2>
+                            7 Lời Khuyên Cho Những Người Du Mục Trong Chuyến Đi Tiết Kiệm.
+                        </h2>
+                        <p>Lên kế hoạch trước: Xác định ngân sách, lựa chọn điểm đến phù hợp và tìm hiểu về giá cả trước khi đi để có kế hoạch tiết kiệm...</p>
+                        <p>Read More <i class="fa-sharp fa-solid fa-chevron-right"></i></p>
+                    </div>
+                </div><div class="article">
+                    <img src="images/tippp.jpg" alt="">
+                    <div class="content">
+                        <div class="date">15 Tháng 5, 2023</div>
+                        <h2>
+                            Chụp Blog Du Lịch Victory Lap.
+                        </h2>
+                        <p>Trong chuyến du lịch, mỗi lần tôi nhấn nút máy ảnh, tôi chụp lại những khoảnh khắc tuyệt vời. Bức hình ghi lại cảm xúc thăng hoa khi bước chân đến những điểm đến đẹp, 
+                            là...</p>
+                        <p>Read More <i class="fa-sharp fa-solid fa-chevron-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Article and tip end  -->
+    <!-- Footer begin -->
+    <footer>
+        <div class="footer_container pad-all-sec small-pad">
+            <div class="row">
+                <div class="col-1 ft-col">
+                    <img src="images/logo.png" alt="">
+                    <p>Công ty du lịch của chúng tôi tự hào là một đối tác đáng tin cậy để bạn khám phá thế giới. Với đội ngũ chuyên gia giàu kinh nghiệm và sự tận tâm, 
+                        chúng tôi cam kết mang đến cho khách hàng những trải nghiệm du lịch tuyệt vời.</p>
+                    <div class="social-icons">
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 ft-col">
+                    <h3>Dịch Vụ</h3>
+                    <ul class="list-services">
+                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="#">Danh Sách</a></li>
+                        <li><a href="#">Cách Hoạt Động</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Bài Viết</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 ft-col">
+                    <h3>Thư Viện</h3>
+                    <ul class="gallery-wr">
+                        <li><a href="#"><img src="images/footer-gallery-1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-6.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-4 ft-col">
+                    <h3>Liên Hệ</h3>
+                    <ul class="informations">
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-phone"></i>
+                                +2(305) 587-3407</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-envelope"></i>
+                                email@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <div class="pad-all-sec">
+                <div class="left">
+                    Travio © 2021 All Right Reserved
+                </div>
+                <div class="right">
+                    <span><a href="#">Terms of Service</a></span> |
+                     <span><a href="#">Privacy Policy</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+</body>
+<script src="js/main.js"></script>
+</html>

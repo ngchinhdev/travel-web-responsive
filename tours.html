@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="icon" type="image/png" href="images/lll.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tours.css">
+    <title>Chuyến Đi - Travio</title>
+</head>
+<body>
+    <!-- Header begin -->
+    <header class="sticky" id="header">
+        <div class="header_container pad-all-sec">
+            <div class="header_wr">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="nav_header">
+                    <div class="x-icon">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="nav_text">
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="locations.html">Địa điểm</a>
+                        </li>
+                        <li>
+                            <a href="tours.html" class="active">Chuyến đi</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Sự kiện</a>
+                        </li>
+                        <li>
+                            <a href="move.html">Di chuyển</a>
+                        </li>
+                    </ul>
+                    <div class="nav_icon">
+                        <div class="search-icon icon">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            <div class="search-box" draggable="true" id="box-se">
+                                <input type="text" placeholder="Nhập thông tin...">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="user-icon icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <section id="tour_page" class="mg-header">
+        <div class="wrap_all_tours pad-all-sec small-pad">
+            <div class="above_items">
+                <div class="search_container">
+                    <h3>Du Lịch 5 Châu, Không Đâu Rẻ Bằng</h3>
+                    <h4>Nhập địa điểm bạn muốn đến</h4>
+                    <div class="search-bar">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        <input type="text" name="" id="" placeholder="Nhập tour bạn muốn ...">
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit">Tìm kiếm</button>
+                    </div>
+                </div>
+                <h1>Top Tour Tại Các Địa Điểm Du Lịch Nổi Tiếng</h1>
+            </div>
+            <div class="tours-row">
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o1.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>London - Tour trong ngày</span>
+                        <h3>Vé Warner Bros. Studio London: The Making of Harry Potter với Xe Đưa Đón Khứ Hồi</h3>
+                        <p>Tham quan Warner Bros. Studio Tour London: The Making of Harry Potter và xem những cảnh hậu trường của thế giới phù thủy khởi hành tại nhiều địa điểm khác nhau!</p>
+                        <div class="info">
+                            <span class="rate">★ 4.6</span>
+                            <span class="review-num">(962 đánh giá)</span>
+                            <span class="review-booked">• 30K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 123.35 <span><del>US$ 137.09</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o2.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Paris - Tour trong ngày</span>
+                        <h3>Vé và Tour Tham Quan Mont Saint Michel</h3>
+                        <p>Tận hưởng một ngày tham quan tuyệt vời tại Mont Saint Michel, một địa điểm du lịch vô cùng xinh đẹp gần Paris</p>
+                        <div class="info">
+                            <span class="rate">★ 4.5</span>
+                            <span class="review-num">(1,028 đánh giá)</span>
+                            <span class="review-booked">• 10K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 11.89 <span><del></del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o3.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Zurich - Tour trong ngày</span>
+                        <h3>Jungfraujoch - Tour Tham Quan Nóc Nhà Châu Âu từ Zurich, Lucerne và Interlaken</h3>
+                        <p>Tour Ngày Jungfraujoch từ Zurich: Tham quan Jungfraujoch từ Zurich với tour ngày này cùng hướng dẫn nói tiếng Anh, Đức và Tây Ban Nha. Bước lên ga tàu cao nhất Châu Âu,</p>
+                        <div class="info">
+                            <span class="rate">★ 4.8</span>
+                            <span class="review-num">(390 đánh giá)</span>
+                            <span class="review-booked">• 5K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Hoàn tiền dễ dàng</span>
+                            <span>Xác nhận tức thời</span>
+                        </div>
+                        <div class="price">Từ US$ 283,55 <span><del></del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o4.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>London - Tour trong ngày</span>
+                        <h3>Vé Stonehenge và Tour Tuỳ Chọn từ London</h3>
+                        <p>Tour Stonehenge, Windsor Và Bath: tham quan 3 kho báu quốc gia của nước Anh với tour ngày bằng xe buýt sang trọng hạng nhất</p>
+                        <div class="info">
+                            <span class="rate">★ 4.5</span>
+                            <span class="review-num">(2,469 đánh giá)</span>
+                            <span class="review-booked">• 1M+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 29.40 <span><del></del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o5.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Bali - Tour du thuyền</span>
+                        <h3>Tour Ngày Tham Quan Nusa Penida với Tùy Chọn Lặn Ống Thở từ Bali</h3>
+                        <p>Đặt thẻ Bali Pass với tour xe buýt hop-on hop-off để tham quan hơn 80 điểm đến trong thành phố kèm các chuyến đi không giới hạn</p>
+                        <div class="info">
+                            <span class="rate">★ 4.4</span>
+                            <span class="review-num">(5,342 đánh giá)</span>
+                            <span class="review-booked">• 80K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Xác nhận tức thời</span>
+                        </div>
+                        <div class="price">Từ US$ 30.05 <span><del></del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o6.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Nangkok - Tour trong ngày </span>
+                        <h3>Tour Bangkok Trong Ngày Tham Quan Chùa Wat Arun, Wat Pho, Cung Điện Hoàng Gia và Chùa Phật Ngọc</h3>
+                        <p>Visit Bangkok's main attractions on an immersive day tour of the city that takes you to the Grand Palace, Temple of Dawn, Chinatown and more</p>
+                        <div class="info">
+                            <span class="rate">★ 4.7</span>
+                            <span class="review-num">(1,062 đánh giá)</span>
+                            <span class="review-booked">• 10K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 57.99 <span><del>US$ 68.35</del></span></div>
+                        <span class="sub-info">Giá độc quyền</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o7.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Kanchanaburi - Tour trong ngày</span>
+                        <h3>Tour Ngày Công Viên Safari và Cầu Sông Kwai ở Kanchanaburi</h3>
+                        <p>Đặt tour ngày tham quan công viên Kanchanaburi Safari từ Bangkok của AK Travel qua Klook!</p>
+                        <div class="info">
+                            <span class="rate">★ 4.6</span>
+                            <span class="review-num">(237 đánh giá)</span>
+                            <span class="review-booked">• 7K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 68.39 <span><del>US$ 72.75</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o8.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Phuket - Tour du thuyền</span>
+                        <h3>Tour Tham Quan James Bond và Vịnh Phang Nga từ Phuket</h3>
+                        <p>Đặt online tour ngày tham quan đảo James Bond và vịnh Phang Nga tại Klook: Tham quan đảo James Bond nổi tiếng thế giới trên thuyền lớn tiện nghi</p>
+                        <div class="info">
+                            <span class="rate">★ 4.5</span>
+                            <span class="review-num">(2,347 đánh giá)</span>
+                            <span class="review-booked">• 40K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 45.39 <span><del>US$ 69.75</del></span></div>
+                        <span class="sub-info">Ưu đãi đặc biệt</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o9.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>TP Hồ Chí Minh - Tour ẩm thực</span>
+                        <h3>Du Thuyền Sài Gòn Với Bữa Tối Trên Tàu Saigon Princess</h3>
+                        <p>Tận hưởng một buổi tối lãng mạn trên du thuyền Saigon Princess. Đặt ngay trên Klook để được giảm thêm đến 200k! Khán phá Saigon Princess ngay!</p>
+                        <div class="info">
+                            <span class="rate">★ 4.6</span>
+                            <span class="review-num">(569 đánh giá)</span>
+                            <span class="review-booked">• 10K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 28.39 <span><del>US$ 42.75</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o10.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Armsterdam - Tour trong ngày</span>
+                        <h3>Tour Ngày Tham Quan Làng Giethoorn và Enclosing Dike với Chuyến Đi Thuyền Truyền Thống </h3>
+                        <p>Khám phá một trong những ngôi làng đẹp nhất Hà Lan, Giethoorn tí hon, và Eclosing Dike trong tour cả ngày với hướng dẫn viên đa ngôn ngữ</p>
+                        <div class="info">
+                            <span class="rate">★ 4.5</span>
+                            <span class="review-num">(321 đánh giá)</span>
+                            <span class="review-booked"></span>
+                        </div>
+                        <div class="tag">
+                            <span>Xác nhận tức thời</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 85.45 <span><del></del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o11.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Đà Nẵng - Tour trong ngày</span>
+                        <h3>Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</h3>
+                        <p>Tour đi Bà Nà Hills 1 ngày tham quan Cầu Vàng Bà Nà nổi tiếng trong chuyến du lịch Đà Nẵng! Tour bao gồm vé Bà Nà Hills lẫn xe đưa đón chỉ có tại Klook.</p>
+                        <div class="info">
+                            <span class="rate">★ 4.5</span>
+                            <span class="review-num">(2,908 đánh giá)</span>
+                            <span class="review-booked">• 30K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hướng dẫn tiếng Việt</span>
+                        </div>
+                        <div class="price">Từ US$ 48.19 <span><del>US$ 51.75</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o12.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Kuala Lumpur - Tour trong ngày</span>
+                        <h3>Tour Ngày Tham Quan Cao Nguyên Genting & Hang Batu</h3>
+                        <p>Tìm hiểu thêm về Kuala Lumpur với chuyến tham quan sườn núi này. Tận hưởng cơ hội đến thăm cao nguyên Genting, Động Batu và một điểm dừng chân tùy chọn tại Đền Chin Swee Caves</p>
+                        <div class="info">
+                            <span class="rate">★ 4.6</span>
+                            <span class="review-num">(1,112 đánh giá)</span>
+                            <span class="review-booked">• 20K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 28.65 <span><del>US$ 32.55</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o13.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Palawan - Tour trong ngày</span>
+                        <h3>Tour Ngày Tham Quan Đảo Coron Siêu Hấp Dẫn </h3>
+                        <p>Vé Bảo Tàng Orsay với Các Bức Tranh của Monet và Van Gogh</p>
+                        <div class="info">
+                            <span class="rate">★ 4.7</span>
+                            <span class="review-num">(6,142 đánh giá)</span>
+                            <span class="review-booked">• 10K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 24.15 <span><del>US$ 29.99</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o14.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Paris - Tour trong ngày</span>
+                        <h3>Vé Bảo Tàng Orsay với Các Bức Tranh của Monet và Van Gogh</h3>
+                        <p>Nếu bạn yêu nghệ thuật thì đừng bỏ lỡ chuyến đi đến Bảo tàng với bộ sưu tập các tác phẩm theo trường phái Ấn tượng và các thiết bị thiết minh bằng 4 ngôn ngữ khác nhau</p>
+                        <div class="info">
+                            <span class="rate">★ 4.6</span>
+                            <span class="review-num">(4,212 đánh giá)</span>
+                            <span class="review-booked">• 30K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 19.05 <span><del></del></span></div>
+                        <span class="sub-info"></span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o15.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Chiang Mai - Tour trong ngày</span>
+                        <h3>Tour Công Viên Sinh Thái Voi Kerchor ở Chiang Mai</h3>
+                        <p>Đặt chỗ để có được một trải nghiệm thực sự khó quên và mang tính giáo dục về đạo đức với những chú voi của Chiang Mai, T</p>
+                        <div class="info">
+                            <span class="rate">★ 4.6</span>
+                            <span class="review-num">(3,232 đánh giá)</span>
+                            <span class="review-booked">• 8K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 33.35 <span><del>US$ 49.49</del></span></div>
+                        <span class="sub-info">Chính sách đảm bảo về giá</span>
+                    </div>
+                </div>
+                <div class="tour-col">
+                    <div class="card-above">
+                        <img src="images/o16.webp" alt="">
+                    </div>
+                    <div class="card-under">
+                        <span>Labuan Bajo - Tour trong ngày</span>
+                        <h3>Tour Ngày Tham Quan Cao Nguyên Genting & Hang Batu</h3>
+                        <p>Tận hưởng những ưu đãi tuyệt vời ở đây khi bạn đặt tour du lịch bằng thuyền cao tốc này ở Komodo Cả ngày từ Labuan Bajo!</p>
+                        <div class="info">
+                            <span class="rate">★ 4.5</span>
+                            <span class="review-num">(62 đánh giá)</span>
+                            <span class="review-booked">• 1K+ Đã được đặt </span>
+                        </div>
+                        <div class="tag">
+                            <span>Bán chạy</span>
+                            <span>Hoàn tiền dễ dàng</span>
+                        </div>
+                        <div class="price">Từ US$ 78.85 <span><del>US$ 82.55</del></span></div>
+                        <span class="sub-info">Giảm tối đa 10%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-btn">
+                <button><a href="#">Xem thêm</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer begin -->
+    <footer>
+        <div class="footer_container pad-all-sec small-pad">
+            <div class="row">
+                <div class="col-1 ft-col">
+                    <img src="images/logo.png" alt="">
+                    <p>Công ty du lịch của chúng tôi tự hào là một đối tác đáng tin cậy để bạn khám phá thế giới. Với đội ngũ chuyên gia giàu kinh nghiệm và sự tận tâm, 
+                        chúng tôi cam kết mang đến cho khách hàng những trải nghiệm du lịch tuyệt vời.</p>
+                    <div class="social-icons">
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 ft-col">
+                    <h3>Dịch Vụ</h3>
+                    <ul class="list-services">
+                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="#">Danh Sách</a></li>
+                        <li><a href="#">Cách Hoạt Động</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Bài Viết</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 ft-col">
+                    <h3>Thư Viện</h3>
+                    <ul class="gallery-wr">
+                        <li><a href="#"><img src="images/footer-gallery-1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer-gallery-6.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-4 ft-col">
+                    <h3>Liên Hệ</h3>
+                    <ul class="informations">
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-phone"></i>
+                                +2(305) 587-3407</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-sharp fa-solid fa-envelope"></i>
+                                email@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <div class="pad-all-sec">
+                <div class="left">
+                    Travio © 2021 All Right Reserved
+                </div>
+                <div class="right">
+                    <span><a href="#">Terms of Service</a></span> |
+                     <span><a href="#">Privacy Policy</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+</body>
+<script src="js/main.js"></script>
+</html>

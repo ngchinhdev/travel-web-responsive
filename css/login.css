@@ -1,0 +1,128 @@
+:root {
+    --good-color: #3e9ddc;
+    --bad-color: red;
+}
+
+.two_form-wr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.two_form-wr .container {
+    padding: 30px 50px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.two_form-wr .btn_change {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.two_form-wr .btn_change .btn {
+    /* padding: 10px 24px; */
+    width: 120px;
+    height: 40px;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.two_form-wr .btn_change .btn.active {
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}
+
+.two_form-wr .form-cm {
+    display: none;
+}
+
+.two_form-wr .form-cm.active {
+    display: block;
+}
+
+.two_form-wr h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.two_form-wr .field {
+    margin: 40px 0;
+    position: relative;
+}
+
+.two_form-wr .field input {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #adadad;
+    font-size: 16px;
+}
+
+.two_form-wr .field input::placeholder {
+    font-size: 17px;
+}
+
+.two_form-wr hr {
+    border: none;
+    border-top: 3px solid var(--sub-color);
+    position: absolute;
+    transform: translateY(-100%);
+    width: 0%;
+    transition: 0.4s;
+}
+
+.two_form-wr .field input:focus ~ hr {
+    width: 100%;
+}
+
+.two_form-wr .field hr.sucess {
+    width: 100%;
+}
+
+.field small {
+    position: absolute;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.two_form-wr .field.error input::placeholder, small.error {
+    color: var(--secondary-color);
+}
+
+hr.error {
+    width: 100%;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.cf-btn {
+    margin: 0 auto;
+    width: 80%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.cf-btn:hover {
+    background-color: var(--sub-color);
+    color: var(--secondary-color);
+}
